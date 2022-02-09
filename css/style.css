@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: window;
+  src: url(../fonts/BlackWidowMovie-d95Rg.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: marvel;
+  src: url(../fonts/MarvelRegular-Dj83.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: window;
+}
+
+/* navbar */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#navbar {
+  width: 100%;
+  height: 50px;
+  background-color: #00000033;
+  color: eee;
+  position: fixed;
+}
+
+.navbar-container {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#items {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+#items li {
+  padding: 10px;
+  letter-spacing: 2px;
+  transition: 500ms;
+  color: #f8f8f8;
+}
+
+#items li:hover {
+  cursor: pointer;
+  color: #9c0001;
+  font-weight: bold;
+}
+
+/* início */
+
+#marvel {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/erik-mclean-8SeJUmfahu0-unsplash.jpg) no-repeat
+    center center/cover;
+
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: color;
+}
+
+#marvel-container {
+  text-align: center;
+}
+
+#marvel-container h1 {
+  font-size: 8rem;
+  color: #c10101;
+  font-family: marvel;
+  letter-spacing: 5px;
+}
+
+#marvel-container P {
+  font-size: 2rem;
+  color: #eee;
+  letter-spacing: 27px;
+  margin-top: -25px;
+}
+
+/* history */
+
+#history {
+  height: 113vh;
+  background: rgb(22, 22, 22);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#history-container {
+  width: 60%;
+  height: 100%;
+  background: rgba(37, 37, 37, 0.219);
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 5px;
+}
+
+#history-container h2 {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  margin-top: 18%;
+  margin-bottom: 10%;
+  color: #e6e81e;
+}
+
+#history-container p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+  line-height: 28px;
+  font-weight: 300;
+  text-align: justify;
+  color: #eee;
+}
+
+/* personagens */
+
+#personagens {
+  height: 120vh;
+  background: rgb(22, 22, 22);
+  color: #eee;
+}
+
+#titulo {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 1.8rem;
+  color: #e6e81e;
+}
+
+#personagens-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+.persona {
+  background: rgba(51, 51, 51, 0.699);
+  padding: 10px;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 1.2rem;
+  transition: 500ms;
+}
+
+.persona:hover {
+  cursor: pointer;
+  background: rgba(87, 87, 87, 0.767);
+  color: #d13d3d;
+}
+
+.persona img {
+  width: 300px;
+  height: 230px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+  transition: 1000ms;
+}
+
+.persona img:hover {
+  width: 310px;
+  height: 235px;
+}

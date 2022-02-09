@@ -1,0 +1,47 @@
+#navbar {
+  height: 130px;
+}
+
+.navbar-container {
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+#items {
+  flex-direction: column;
+  text-align: center;
+}
+
+#items li:nth-child(2) {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+/* marvel logo */
+
+#marvel-container {
+  padding: 40px;
+}
+
+/* historia */
+
+#history {
+  text-align: center;
+  height: 110vh;
+}
+
+#history-container {
+  width: 90%;
+  height: 100%;
+}
+
+/* personágens */
+
+#personagens {
+  height: 310vh;
+  padding-top: 40px;
+}
+
+#personagens-container {
+  grid-template-columns: 1fr;
+}
